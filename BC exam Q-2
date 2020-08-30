@@ -1,0 +1,26 @@
+pragma solidity 0.4.18 <= 0.6.12;
+
+
+contract Edata{
+    
+    string name;
+    string dept;
+    int salary;
+    string employID;
+    
+    
+    
+    function Edata(string newName, string newDept, int newSalary, string newEmployID) {
+        name = newName;
+        dept = newDept;
+        salary = newSalary;
+        employID = newEmployID;
+    }
+    
+    
+    
+    function readEdata()public view returns(string,string,int,string){
+        
+        return(name ,dept, salary, employID );
+    }
+}
