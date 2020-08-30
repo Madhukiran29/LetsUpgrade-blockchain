@@ -1,0 +1,28 @@
+pragma solidity 0.4.18 <= 0.6.12;
+
+
+contract Rbill{
+    
+    string head;
+    string teamName;
+    int teamNumber;
+    int money;
+    string teamID;
+    
+    
+    
+    function Ebill(string newHead, string newTeamName, int newTeamNumber, int newMoney, string newTeamID) {
+        head = newHead; 
+     teamName = newTeamName;
+     teamNumber = newTeamNumber;
+     money = newMoney;
+     teamID = newTeamID;
+    }
+    
+    
+    
+    function readEbill()public view returns(string,string,int,int,string){
+        
+        return(head ,teamName , teamNumber , money, teamID );
+    }
+}
